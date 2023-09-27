@@ -1,5 +1,14 @@
 class DS:
     Id='01_'
+    def check():
+        print(DS.Id+'C_')
+        i_data=input()
+        datas=i_data.split('_')
+        if(datas[0]=='01' and datas[1]=='s'):
+            return True
+        else:
+            return False
+        
     def stop():
         data=DS.Id+'0_'+'0_'
         print(data)
@@ -28,6 +37,15 @@ class DS:
 class SM:
     Id='03_'
 
+    def check():
+        print(SM.Id+'C_')
+        i_data=input()
+        datas=i_data.split('_')
+        if(datas[0]=='03' and datas[1]=='s'):
+            return True
+        else:
+            return False
+
     def DHT():
         data=SM.Id+'1_'
         print(data)
@@ -37,5 +55,4 @@ class SM:
             return datas[1:3]
         else:
             return None,None
-        
         
